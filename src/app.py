@@ -17,14 +17,6 @@ def add_new_todo():
     request_body = jsonify(todos)
     return request_body
 
-@app.route('/todos/prueba', methods=['POST'])
-def add_new_todo():
-    request_body = request.json
-    print("Incoming request with the following body", request_body)
-    request_body = jsonify(todos)
-    return request_body
-
-
 
 
 @app.route('/todos-read', methods=['GET'])
